@@ -30,6 +30,56 @@
     />
   </head>
   <body>
+    <header class="header">
+      <a class="header--home" href="/" title="Home">
+        <img class="header--logo" src="./public/logo@2x.png" alt="nerdweb" />
+      </a>
+
+      <nav class="header--nav">
+        <ul>
+          <li>
+            <a class="header--navlink" title="Nerdweb" href="#">Nerdweb</a>
+          </li>
+          <li>
+            <a class="header--navlink" title="Serviços" href="#services"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a class="header--navlink" title="Blog" href="#blog">Blog</a>
+          </li>
+          <li>
+            <a class="header--navlink" title="Atendimento" href="#attendance"
+              >Atendimento</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header--dropdown">
+        <button class="header--btn__drop">
+          Dia a Dia
+          <i class="header--icon header--icon__drop fa-solid fa-caret-down"></i>
+        </button>
+      </div>
+
+      <div class="header--actions">
+        <button class="header--btn" type="button" title="Meu Perfil">
+          <i class="header--icon fa-regular fa-circle-user"></i>
+        </button>
+        <button class="header--btn" type="button" title="Ver Carrinho">
+          <i class="header--icon fa-brands fa-opencart"></i>
+        </button>
+        <button
+          class="header--btn header--btn__menu"
+          type="button"
+          title="Abrir Menu"
+        >
+          <i class="header--icon header--icon__menu fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
     <!-- SWIPPER.JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- LÓGICA DA APLICAÇÃO -->
