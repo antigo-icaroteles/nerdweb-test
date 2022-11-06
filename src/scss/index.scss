@@ -1,0 +1,14 @@
+@import "./config/mixins";
+@import "./config/functions";
+@import "./config/breakpoints";
+@import "./config/themes";
+
+@import "./styles/reset";
+@import "./styles/general";
+
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/banner";
+@import "./components/carrousel";
+@import "./components/subscribe";
+@import "./components/footer";
