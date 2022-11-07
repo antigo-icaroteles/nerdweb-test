@@ -18,6 +18,10 @@
     @include flex-between();
     align-items: flex-start;
   }
+
+  &__hidden {
+    display: none;
+  }
 }
 
 .dropdown--card {

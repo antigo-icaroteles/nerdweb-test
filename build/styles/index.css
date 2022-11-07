@@ -436,6 +436,9 @@ main {
     align-items: flex-start;
   }
 }
+.dropdown__hidden {
+  display: none;
+}
 
 .dropdown--card {
   width: 126px;
