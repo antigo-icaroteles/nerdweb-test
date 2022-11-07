@@ -74,15 +74,23 @@
           class="header--btn header--btn__menu"
           type="button"
           title="Abrir Menu"
+          id="btnOpenMenu"
         >
           <i class="header--icon header--icon__menu fa-solid fa-bars"></i>
         </button>
       </div>
     </header>
 
-    <div class="menu menu__hidden">
+    <div class="menu menu__hidden" id="menu">
       <div class="menu--logo"></div>
-      <div class="menu--close">X</div>
+      <button
+        class="menu--close"
+        type="button"
+        title="Fechar Menu"
+        id="btnCloseMenu"
+      >
+        X
+      </button>
       <nav>
         <ul class="menu--list">
           <li>
@@ -122,7 +130,7 @@
     <div class="navbar">
       <nav class="navbar--nav">
         <ul>
-          <li role="button" class="navbar--dropdown">
+          <li role="button" class="navbar--dropdown" id="btnDropdown">
             Sites <i class="navbar--icon fa-solid fa-caret-down"></i>
           </li>
           <li>
@@ -155,7 +163,7 @@
         </button>
       </label>
 
-      <div class="dropdown dropdown__hidden">
+      <div class="dropdown dropdown__hidden" id="dropdown">
         <div class="dropdown--card">
           <h3 class="dropdown--title">Soluções Site</h3>
           <hr class="dropdown--divider" />
