@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  font-family: "Roboto", sans-serif;
+
+  font-family: "Roboto Slab", serif;
   text-decoration: none;
   color: inherit;
 }
@@ -18,6 +18,10 @@ input,
 select {
   outline: none;
   border: none;
+
+  &::placeholder {
+    color: inherit;
+  }
 }
 
 li {

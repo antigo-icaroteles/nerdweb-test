@@ -1,0 +1,13 @@
+.banner {
+  width: 100%;
+  height: 500px;
+
+  @include min-media-querie($w-md) {
+    height: 653px;
+  }
+
+  img {
+    @include full();
+    object-fit: cover;
+  }
+}

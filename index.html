@@ -10,7 +10,7 @@
 
     <!-- FONTS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -79,6 +79,593 @@
         </button>
       </div>
     </header>
+
+    <div class="navbar">
+      <nav class="navbar--nav">
+        <ul>
+          <li role="button" class="navbar--dropdown">
+            Sites <i class="navbar--icon fa-solid fa-caret-down"></i>
+          </li>
+          <li>
+            <a class="navbar--link" href="#">Redes Sociais</a>
+          </li>
+          <li>
+            <a class="navbar--link" href="#">E-Commerce</a>
+          </li>
+          <li>
+            <a class="navbar--link" href="#">Mídia Online</a>
+          </li>
+          <li>
+            <a class="navbar--link" href="#">Landing Pages</a>
+          </li>
+        </ul>
+      </nav>
+      <label class="navbar--search" for="search">
+        <input
+          class="navbar--input"
+          type="text"
+          title="Pesquisar"
+          placeholder="Digite sua pesquisa"
+          name="search"
+          id="search"
+        />
+        <button class="navbar--btn__search" type="button" title="Pesquisar">
+          <i
+            class="navbar--icon navbar--icon__search fa-solid fa-magnifying-glass"
+          ></i>
+        </button>
+      </label>
+    </div>
+
+    <picture class="banner">
+      <source
+        srcset="./public/assets/banner/banner__mobile@2x.png"
+        media="(max-width: 768px)"
+      />
+      <source srcset="./public/assets/banner/banner@2x.png" />
+      <img src="./public/assets/banner/banner@2x.png" alt="Nerdweb Banner" />
+    </picture>
+
+    <main>
+      <section id="carousell" class="carousell">
+        <h3 class="carousell--title">
+          Descubra os serviços Nerdweb
+          <strong class="carousell--title__strong"
+            >que mais combinam com a sua empresa</strong
+          >
+        </h3>
+
+        <div class="carousell--container">
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="swiper-continue">
+                  <img
+                    class="carousell--img"
+                    src="./public/assets/carousell/icon-1.png"
+                    alt="Ícone"
+                  />
+                  <h4 class="carousell--name">Título</h4>
+                  <p class="carousell--description">
+                    Dolor sit amet, consetetur sadipscing elitr, sed
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="swiper-continue">
+                  <img
+                    class="carousell--img"
+                    src="./public/assets/carousell/icon-1.png"
+                    alt="Ícone"
+                  />
+                  <h4 class="carousell--name">Título</h4>
+                  <p class="carousell--description">
+                    Dolor sit amet, consetetur sadipscing elitr, sed
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="swiper-continue">
+                  <img
+                    class="carousell--img"
+                    src="./public/assets/carousell/icon-1.png"
+                    alt="Ícone"
+                  />
+                  <h4 class="carousell--name">Título</h4>
+                  <p class="carousell--description">
+                    Dolor sit amet, consetetur sadipscing elitr, sed
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="swiper-continue">
+                  <img
+                    class="carousell--img"
+                    src="./public/assets/carousell/icon-1.png"
+                    alt="Ícone"
+                  />
+                  <h4 class="carousell--name">Título</h4>
+                  <p class="carousell--description">
+                    Dolor sit amet, consetetur sadipscing elitr, sed
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="swiper-continue">
+                  <img
+                    class="carousell--img"
+                    src="./public/assets/carousell/icon-1.png"
+                    alt="Ícone"
+                  />
+                  <h4 class="carousell--name">Título</h4>
+                  <p class="carousell--description">
+                    Dolor sit amet, consetetur sadipscing elitr, sed
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="swiper-continue">
+                  <img
+                    class="carousell--img"
+                    src="./public/assets/carousell/icon-1.png"
+                    alt="Ícone"
+                  />
+                  <h4 class="carousell--name">Título</h4>
+                  <p class="carousell--description">
+                    Dolor sit amet, consetetur sadipscing elitr, sed
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="carousell--navigation carousell--navigation__prev">
+            <i class="carousell--icon fa-solid fa-angle-left"></i>
+          </button>
+          <button class="carousell--navigation carousell--navigation__next">
+            <i class="carousell--icon fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+
+        <a class="carousell--btn" href="#" title="Ver Serviços">Ver Serviços</a>
+      </section>
+
+      <section id="products" class="products">
+        <h3 class="products--title">
+          Conheça todos
+          <strong class="products--title__strong">produtos Nerdweb</strong>
+        </h3>
+        <ul class="products--list">
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/laptop.png"
+              alt="Sites"
+            />
+            Sites
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/phone.png"
+              alt="E-Commerce"
+            />
+            E-Commerce
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+          <li class="products--item">
+            <img
+              class="products--img"
+              src="./public/assets/products/shop.png"
+              alt="Shop"
+            />
+            Shop
+          </li>
+        </ul>
+        <a class="products--btn" href="#">Ver Todos Produtos</a>
+      </section>
+
+      <section id="register" class="register">
+        <div class="register--continue">
+          <h3 class="register--title">Faça parte do nosso time de nerds</h3>
+          <p class="register--text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+
+          <a class="register--btn" href="#">Cadastre-se</a>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <h3 class="services--title">Seleção de Serviços</h3>
+        <h4 class="services--subtitle">Conheça nossa seleção especial</h4>
+
+        <ul class="services--list">
+          <li class="services--item">
+            <img
+              class="services--img"
+              src="./public/assets/services/card.png"
+              alt="Serviço"
+            />
+            <div class="services--infos">
+              <h5 class="services--name">Serviço de teste de front-end</h5>
+              <p class="services--description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+
+              <a class="services--link" href="#">Conhecer</a>
+            </div>
+          </li>
+          <li class="services--item">
+            <img
+              class="services--img"
+              src="./public/assets/services/card.png"
+              alt="Serviço"
+            />
+            <div class="services--infos">
+              <h5 class="services--name">Serviço de teste de front-end</h5>
+              <p class="services--description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+
+              <a class="services--link" href="#">Conhecer</a>
+            </div>
+          </li>
+          <li class="services--item">
+            <img
+              class="services--img"
+              src="./public/assets/services/card.png"
+              alt="Serviço"
+            />
+            <div class="services--infos">
+              <h5 class="services--name">Serviço de teste de front-end</h5>
+              <p class="services--description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+
+              <a class="services--link" href="#">Conhecer</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about--banner">
+          <h3 class="about--title about--title__banner">
+            Conheça a visão Nerdweb e entenda nossa história
+          </h3>
+          <p class="about--subtitle">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <a class="about--btn" href="#" title="Ir para Sobre">
+            Ir para Sobre
+          </a>
+        </div>
+        <div class="about--divider"></div>
+        <div class="about--continue">
+          <div class="about--main">
+            <div class="about--texts">
+              <h4 class="about--title">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam
+              </h4>
+              <p class="about--text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+                <strong class="about--text__strong"
+                  >At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren</strong
+                >
+                , no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                ipsum dolor sit amet, consetetur
+                <strong class="about--text__strong"
+                  >sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam</strong
+                >
+                voluptua. At vero eos et accusam et.
+              </p>
+            </div>
+            <ul class="about--certificates">
+              <li class="about--certificate">
+                <img
+                  class="about--certificate-img"
+                  src="./public/assets/about/certificate-1.png"
+                  alt="Certificado"
+                />
+              </li>
+              <li class="about--certificate">
+                <img
+                  class="about--certificate-img"
+                  src="./public/assets/about/certificate-2.png"
+                  alt="Certificado"
+                />
+              </li>
+              <li class="about--certificate">
+                <img
+                  class="about--certificate-img"
+                  src="./public/assets/about/certificate-3.png"
+                  alt="Certificado"
+                />
+              </li>
+            </ul>
+          </div>
+          <form class="about--form">
+            <div class="about--form-titles">
+              <h5 class="about--title about--title__form">
+                Novidades e descontos especiais
+              </h5>
+              <span class="about--subtitle about--subtitle__form"
+                >Descubra com a gente uma vida nova, saudável, cheia de sabor e
+                desconto!</span
+              >
+            </div>
+            <div class="about--form-continue">
+              <input
+                class="about--input"
+                type="text"
+                title="Nome"
+                name="name"
+                id="name"
+                placeholder="Nome"
+              />
+              <input
+                class="about--input"
+                type="email"
+                title="E-mail"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+
+              <button
+                class="about--btn about--btn__form"
+                type="submit"
+                title="Cadastrar"
+              >
+                Cadastrar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer--continue">
+        <a class="footer--home" title="Nerdweb" href="#">
+          <img
+            class="footer--logo"
+            src="./public/logo_footer@2x.png"
+            alt="nerdweb"
+          />
+        </a>
+
+        <nav class="footer--nav">
+          <h3 class="footer--title">Nerdweb</h3>
+          <ul class="footer--list">
+            <li class="footer--item">
+              <a class="footer--link" title="Sobre" href="#">Sobre</a>
+            </li>
+            <li class="footer--item">
+              <a class="footer--link" title="Nossos Princípios" href="#"
+                >Nossos Princípios</a
+              >
+            </li>
+            <li class="footer--item">
+              <a class="footer--link" title="Funcionários" href="#"
+                >Funcionários</a
+              >
+            </li>
+            <li class="footer--item">
+              <a class="footer--link" title="Trabalhe Conosco" href="#"
+                >Trabalhe Conosco</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="footer--nav">
+          <h3 class="footer--title">Ajuda</h3>
+          <ul class="footer--list">
+            <li class="footer--item">
+              <a class="footer--link" title="Prazos e Entregas" href="#"
+                >Prazos e Entregas</a
+              >
+            </li>
+            <li class="footer--item">
+              <a class="footer--link" title="Troca e Devoluções" href="#"
+                >Troca e Devoluções</a
+              >
+            </li>
+            <li class="footer--item">
+              <a class="footer--link" title="Políticas de Privacidade" href="#"
+                >Políticas de Privacidade</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section class="footer--section">
+          <h3 class="footer--title">Atendimento</h3>
+          <ul class="footer--list">
+            <li class="footer--item">
+              <a class="footer--link" title="Políticas de Privacidade" href="#"
+                >Dúvidas Frequentes</a
+              >
+            </li>
+            <li class="footer--item">(41) 3333-3333</li>
+            <li class="footer--item">teste@nerdweb.com.br</li>
+          </ul>
+        </section>
+
+        <section class="footer--section footer--section__bordered">
+          <h3 class="footer--title">Horário de Atendimento</h3>
+          <p class="footer--schedules">
+            De segunda à sexta-feira das 08h00 às 12h00 e das 13h00 às 17h40
+          </p>
+        </section>
+      </div>
+
+      <div class="footer--bottom">
+        <small class="footer--copy"
+          >2022 Nerdweb - Extreme Hosting, todos os direitos reservados.</small
+        >
+        <section class="footer--section footer--section__socials">
+          <h3 class="footer--title footer--title__socials">
+            Fique em sintonia com a gente
+          </h3>
+          <ul class="footer--list footer--list__socials">
+            <li class="footer--item footer--item__socials">
+              <a
+                class="footer--link footer--link__socials"
+                href="#"
+                title="Facebook"
+              >
+                <i class="footer--socials fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="footer--item footer--item__socials">
+              <a
+                class="footer--link footer--link__socials"
+                href="#"
+                title="Instagram"
+              >
+                <i class="footer--socials fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="footer--item footer--item__socials">
+              <a
+                class="footer--link footer--link__socials"
+                href="#"
+                title="Linkedin"
+              >
+                <i class="footer--socials fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="footer--item footer--item__socials">
+              <a
+                class="footer--link footer--link__socials"
+                href="#"
+                title="Twitter"
+              >
+                <i class="footer--socials fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="footer--item footer--item__socials">
+              <a
+                class="footer--link footer--link__socials"
+                href="#"
+                title="Youtube"
+              >
+                <i class="footer--socials fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
 
     <!-- SWIPPER.JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
