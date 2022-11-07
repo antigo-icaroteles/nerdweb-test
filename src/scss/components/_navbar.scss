@@ -8,6 +8,8 @@
 
   background-color: $terciary-color-700;
 
+  position: relative;
+
   @include min-media-querie($w-xxl) {
     @include flex-between();
   }
