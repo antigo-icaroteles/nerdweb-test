@@ -37,10 +37,16 @@ const closeMenu = () => {
 
 const openDropdown = () => {
   const dropdown = document.getElementById("dropdown");
+  const iconDropdown = document.getElementById("iconDropdown");
+  iconDropdown.classList.remove("fa-caret-down");
+  iconDropdown.classList.add("fa-caret-up");
   dropdown.classList.remove("dropdown__hidden");
 };
 const closeDropdown = () => {
   const dropdown = document.getElementById("dropdown");
+  const iconDropdown = document.getElementById("iconDropdown");
+  iconDropdown.classList.remove("fa-caret-up");
+  iconDropdown.classList.add("fa-caret-down");
   dropdown.classList.add("dropdown__hidden");
 };
 

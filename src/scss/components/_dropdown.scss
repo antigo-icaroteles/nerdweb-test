@@ -1,7 +1,18 @@
+@keyframes show-dropdown {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .dropdown {
   display: none;
 
   @include min-media-querie($w-xxl) {
+    animation: show-dropdown 1s 1;
     width: 100%;
     max-width: 1320px;
     height: 279px;

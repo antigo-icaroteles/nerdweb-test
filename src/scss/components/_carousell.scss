@@ -197,4 +197,8 @@
     font-size: px-to-rem(14);
     line-height: px-to-rem(19);
   }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 }

@@ -239,7 +239,26 @@ main {
   color: #0089bc;
 }
 
+@-webkit-keyframes show-menu {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes show-menu {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
 .menu {
+  -webkit-animation: show-menu 1s 1;
+          animation: show-menu 1s 1;
   width: 100%;
   height: 100%;
   padding: 10px 37px;
@@ -414,11 +433,30 @@ main {
   height: 1.375rem;
 }
 
+@-webkit-keyframes show-dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .dropdown {
   display: none;
 }
 @media (min-width: 1800px) {
   .dropdown {
+    -webkit-animation: show-dropdown 1s 1;
+            animation: show-dropdown 1s 1;
     width: 100%;
     max-width: 1320px;
     height: 279px;
@@ -598,6 +636,9 @@ main {
   color: #033244;
   text-transform: uppercase;
 }
+.products--btn:hover {
+  filter: brightness(0.8);
+}
 
 .register {
   width: 100%;
@@ -689,6 +730,9 @@ main {
     font-size: 0.875rem;
     line-height: 1.1875rem;
   }
+}
+.register--btn:hover {
+  filter: brightness(0.8);
 }
 
 .services {
@@ -796,6 +840,9 @@ main {
   font-weight: 900;
   color: #00aeef;
   text-transform: uppercase;
+}
+.services--link:hover {
+  filter: brightness(0.8);
 }
 
 .carousell {
@@ -1006,6 +1053,9 @@ main {
     font-size: 0.875rem;
     line-height: 1.1875rem;
   }
+}
+.carousell--btn:hover {
+  filter: brightness(0.8);
 }
 
 .about {

@@ -101,4 +101,8 @@
   font-weight: 900;
   color: $terciary-color-400;
   text-transform: uppercase;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 }
