@@ -1,19 +1,6 @@
-@import "./config/mixins";
-@import "./config/functions";
-@import "./config/breakpoints";
-@import "./config/themes";
-
-@import "./styles/reset";
-@import "./styles/general";
-
-@import "./components/header";
-@import "./components/menu";
-@import "./components/navbar";
-@import "./components/dropdown";
-@import "./components/banner";
-@import "./components/products";
-@import "./components/register";
-@import "./components/services";
-@import "./components/carousell";
-@import "./components/about";
-@import "./components/footer";
+@import "./abstracts/index";
+@import "./core/index";
+@import "./vendors/index";
+@import "./components/index";
+@import "./layout/index";
+@import "./blocks/index";

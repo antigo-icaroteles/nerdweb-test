@@ -1,0 +1,32 @@
+.icon {
+  color: var(--terciary-color-400);
+  width: px-to-rem(20);
+  height: px-to-rem(20);
+
+  &:not(&__drop, &__search) {
+    transition: all ease 0.3s;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.1);
+      color: var(--terciary-color-500);
+    }
+  }
+
+  &__menu {
+    color: var(--terciary-color-700);
+  }
+
+  &__drop {
+    width: px-to-rem(12);
+    height: px-to-rem(12);
+    color: var(--secondary-color-400);
+    margin-bottom: 1px;
+  }
+
+  &__search {
+    color: var(--terciary-color-100);
+    width: px-to-rem(22);
+    height: px-to-rem(22);
+  }
+}

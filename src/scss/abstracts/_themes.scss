@@ -1,0 +1,27 @@
+:root {
+  --primary-color-100: #ffffff;
+  --primary-color-200: #f3f3f3;
+  --primary-color-300: #ebebeb;
+  --primary-color-400: #e1e1e1;
+  --primary-color-500: #d6d6d6;
+  --primary-color-600: #676767;
+
+  --secondary-color-100: #2c3a2f;
+  --secondary-color-200: #283137;
+  --secondary-color-300: #101912;
+  --secondary-color-400: #000000;
+
+  --terciary-color-100: #e2f7ff;
+  --terciary-color-200: #b2eaff;
+  --terciary-color-300: #71d8ff;
+  --terciary-color-400: #00aeef;
+  --terciary-color-500: #0089bc;
+  --terciary-color-600: #005271;
+  --terciary-color-700: #033244;
+}
+
+body .__dark {
+  :root {
+    // Caso queira adicionar um modo escuro, trocar os valores das variáveis aqui
+  }
+}

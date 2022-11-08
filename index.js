@@ -27,21 +27,27 @@ const dropdownButton = document.getElementById("btnDropdown");
 
 const openMenu = () => {
   const menu = document.getElementById("menu");
-  menu.classList.remove("menu__hidden");
+  menu.classList.remove("hidden");
 };
 
 const closeMenu = () => {
   const menu = document.getElementById("menu");
-  menu.classList.add("menu__hidden");
+  menu.classList.add("hidden");
 };
 
 const openDropdown = () => {
   const dropdown = document.getElementById("dropdown");
-  dropdown.classList.remove("dropdown__hidden");
+  const iconDropdown = document.getElementById("iconDropdown");
+  iconDropdown.classList.remove("fa-caret-down");
+  iconDropdown.classList.add("fa-caret-up");
+  dropdown.classList.remove("hidden");
 };
 const closeDropdown = () => {
   const dropdown = document.getElementById("dropdown");
-  dropdown.classList.add("dropdown__hidden");
+  const iconDropdown = document.getElementById("iconDropdown");
+  iconDropdown.classList.remove("fa-caret-up");
+  iconDropdown.classList.add("fa-caret-down");
+  dropdown.classList.add("hidden");
 };
 
 openMenuButton.addEventListener("click", openMenu);

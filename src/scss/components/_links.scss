@@ -1,0 +1,95 @@
+.link {
+  cursor: pointer;
+  display: block;
+
+  &__logo {
+    width: 105px;
+    height: 20px;
+
+    @include min-media-querie($width--lg) {
+      width: 110px;
+      height: 21px;
+    }
+  }
+
+  &__nav {
+    font-family: $archer-font;
+    font-size: px-to-rem(14);
+    color: var(--secondary-color-100);
+
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &__active {
+      color: var(--secondary-color-400);
+      border-color: var(--secondary-color-400);
+      font-weight: bold;
+    }
+  }
+
+  &__menu {
+    font-family: $archer-font;
+    font-weight: bold;
+    font-size: px-to-rem(15);
+    line-height: px-to-rem(18);
+    text-transform: uppercase;
+    color: var(--primary-color-200);
+
+    &:hover {
+      color: var(--terciary-color-400);
+    }
+
+    &__main {
+      font-size: px-to-rem(14);
+      line-height: px-to-rem(16);
+      color: var(--terciary-color-400);
+
+      &:hover {
+        color: var(--terciary-color-500);
+      }
+    }
+  }
+
+  &__navbar {
+    font-family: $archer-font;
+    font-size: px-to-rem(14);
+    color: var(--primary-color-100);
+    text-transform: uppercase;
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    &:not(&__drop, .navbar--dropdown) {
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-color: var(--primary-color-100);
+      }
+    }
+  }
+
+  &__footer {
+    width: 64px;
+    height: 24px;
+    margin-bottom: 25.57px;
+
+    @include min-media-querie($width--lg) {
+      flex: 2;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__socials {
+    transition: all ease 0.3s;
+    &:hover {
+      color: var(--terciary-color-500);
+    }
+  }
+}

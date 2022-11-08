@@ -1,0 +1,32 @@
+.navbar {
+  display: none;
+
+  width: 100%;
+  padding: 15px var(--container-px) 17px;
+
+  background-color: var(--terciary-color-700);
+
+  position: relative;
+
+  @include min-media-querie($width--xxl) {
+    @include flex-between();
+  }
+}
+
+.navbar--dropdown {
+  @include flex-center();
+  color: var(--primary-color-100);
+  gap: 5px;
+
+  .icon__drop {
+    color: var(--primary-color-100);
+  }
+}
+
+.navbar--search {
+  width: 238px;
+  height: 40px;
+  border: 1px solid var(--terciary-color-400);
+  border-radius: 8px;
+  position: relative;
+}

@@ -1,0 +1,28 @@
+:root {
+  --container-px: 37px;
+  --header-py: 13px;
+
+  // > 600px
+  @include min-media-querie($width--sm) {
+    --container-px: 50px;
+    --header-py: 15px;
+  }
+
+  // > 960px
+  @include min-media-querie($width--lg) {
+    --container-px: 100px;
+    --header-py: 17px;
+  }
+
+  // > 1240px
+  @include min-media-querie($width--xl) {
+    --container-px: 200px;
+    --header-py: 19px;
+  }
+
+  // > 1800px
+  @include min-media-querie($width--xxl) {
+    --container-px: 300px;
+    --header-py: 21px;
+  }
+}

@@ -1,0 +1,104 @@
+@import "../config/themes"; // Para conseguir visualizar as cores
+
+.services {
+  width: 100%;
+  padding: 0 var(--container-px);
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include min-media-querie(1320px) {
+    padding: 0;
+  }
+}
+
+.services--title {
+  text-align: center;
+  font-size: px-to-rem(17);
+  line-height: px-to-rem(17);
+  font-weight: 900;
+  color: $terciary-color-700;
+  margin-bottom: 8px;
+}
+
+.services--subtitle {
+  text-align: center;
+  font-size: px-to-rem(12);
+  line-height: px-to-rem(12);
+  font-weight: 500;
+  color: $terciary-color-500;
+  margin-bottom: 24px;
+}
+
+.services--list {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 16px;
+
+  display: flex;
+  gap: 20px;
+
+  @include min-media-querie($w-md) {
+    gap: 26px;
+  }
+
+  &::-webkit-scrollbar {
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $primary-color-400;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $terciary-color-500;
+  }
+}
+
+.services--item {
+  width: 100%;
+  min-width: 246px;
+
+  @include flex-center(column);
+
+  @include min-media-querie($w-xs) {
+    min-width: 286px;
+  }
+}
+
+.services--img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.services--infos {
+  padding: 32px 20px;
+  @include flex-center(column);
+  background-color: $secondary-color-200;
+}
+
+.services--name {
+  font-size: px-to-rem(16);
+  line-height: px-to-rem(21);
+  font-weight: 900;
+  color: $primary-color-100;
+  margin-bottom: 12px;
+}
+
+.services--description {
+  font-size: px-to-rem(12);
+  line-height: px-to-rem(16);
+  font-weight: 300;
+  color: $terciary-color-100;
+  margin-bottom: 24px;
+}
+
+.services--link {
+  font-size: px-to-rem(12);
+  line-height: px-to-rem(16);
+  font-weight: 900;
+  color: $terciary-color-400;
+  text-transform: uppercase;
+}

@@ -1,0 +1,35 @@
+.list {
+  display: flex;
+
+  &__menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__navbar {
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+  }
+
+  &__dropdown {
+    flex-direction: column;
+    gap: 5px;
+
+    &:first-child {
+      gap: 8px;
+    }
+  }
+
+  &__footer {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__socials {
+    width: 100%;
+    max-width: 240px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

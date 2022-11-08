@@ -1,0 +1,15 @@
+.input {
+  @include full();
+  border: none;
+  background: none;
+  padding-left: 15px;
+  padding-right: calc(15px + 22px + 10px);
+
+  color: var(--terciary-color-200);
+  font-family: $archer-font;
+  font-size: px-to-rem(14);
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}

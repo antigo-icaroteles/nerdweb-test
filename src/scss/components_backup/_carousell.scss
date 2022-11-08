@@ -1,0 +1,200 @@
+@import "../config/themes"; // Para conseguir visualizar as cores
+
+.carousell {
+  width: 100%;
+  padding: 0 var(--container-px) 0;
+  margin-top: 24px;
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  @include min-media-querie($w-lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 75px;
+  }
+
+  @include min-media-querie(1320px) {
+    padding: 0;
+  }
+}
+
+.carousell--title {
+  max-width: 248px;
+  text-align: center;
+  font-size: px-to-rem(17);
+  line-height: px-to-rem(21);
+  font-weight: 900;
+  color: $terciary-color-700;
+
+  &__strong {
+    color: $terciary-color-400;
+  }
+
+  @include min-media-querie($w-lg) {
+    text-align: left;
+    width: 242;
+    height: 128px;
+
+    font-size: px-to-rem(24);
+    line-height: px-to-rem(32);
+  }
+}
+
+.carousell--container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+
+  @include min-media-querie($w-lg) {
+    max-width: 518px;
+  }
+
+  @include min-media-querie($w-xl) {
+    max-width: 900px;
+  }
+}
+
+.carousell .swiper {
+  width: 100%;
+}
+
+.carousell .swiper-slide {
+  width: 100%;
+  min-height: 250px;
+
+  @include flex-center();
+
+  @include min-media-querie($w-lg) {
+    height: 280px;
+  }
+
+  @include min-media-querie($w-xl) {
+    height: 316px;
+  }
+}
+
+.carousell .swiper-continue {
+  width: calc(100% - 2 * 24px - 2 * 25px);
+  height: 90%;
+  padding: 15px;
+  background-color: $primary-color-100;
+
+  @include flex-center(column);
+
+  box-shadow: 1px 3px 10px $primary-color-300;
+
+  @include min-media-querie($w-lg) {
+    width: 250px;
+  }
+
+  @include min-media-querie($w-xl) {
+    width: 284px;
+  }
+}
+
+.carousell--navigation {
+  position: absolute;
+  top: calc(50% - 12px);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $terciary-color-100;
+  color: $terciary-color-600;
+
+  @include flex-center();
+  z-index: 999;
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  @include min-media-querie($w-lg) {
+    top: -36px;
+
+    &__next {
+      left: 44px; // 24px + 20px
+    }
+  }
+}
+
+.swiper-button-disabled {
+  cursor: not-allowed;
+  background-color: $primary-color-400;
+  color: $primary-color-600;
+}
+
+.carousell--icon {
+  width: 7px;
+  height: 11px;
+}
+
+.carousell--img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 8px;
+
+  @include min-media-querie($w-lg) {
+    width: 135px;
+    height: 135px;
+  }
+
+  @include min-media-querie($w-xl) {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.carousell--name {
+  text-align: center;
+  font-size: px-to-rem(16);
+  line-height: px-to-rem(21);
+  font-weight: 900;
+  color: $secondary-color-300;
+  margin-bottom: 8px;
+}
+
+.carousell--description {
+  max-width: 159px;
+  text-align: center;
+  font-size: px-to-rem(12);
+  line-height: px-to-rem(16);
+  font-weight: 500;
+  color: $secondary-color-300;
+}
+
+.carousell--btn {
+  width: calc(100% - 2 * 24px - 2 * 25px);
+  height: 32px;
+  padding: 8px 0;
+
+  @include flex-center();
+  background-color: $terciary-color-300;
+
+  font-size: px-to-rem(12);
+  line-height: px-to-rem(16);
+  font-weight: 900;
+  color: $terciary-color-700;
+  text-transform: uppercase;
+
+  @include min-media-querie($w-lg) {
+    width: 181px;
+    height: 36px;
+
+    position: absolute;
+    top: calc((100% - 24px + 128px - 60px) / 2);
+
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(19);
+  }
+}

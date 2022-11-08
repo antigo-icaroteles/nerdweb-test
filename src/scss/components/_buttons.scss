@@ -1,0 +1,52 @@
+.btn {
+  &__menu {
+    @include min-media-querie($width--lg) {
+      display: none;
+    }
+  }
+
+  &__drop {
+    display: none;
+
+    @include min-media-querie($width--lg) {
+      @include flex-center();
+      gap: 13px;
+      margin-right: 37px;
+      font-family: $archer-font;
+      font-weight: bold;
+      font-size: px-to-rem(12);
+      line-height: px-to-rem(12);
+      letter-spacing: 0.18px;
+      text-transform: uppercase;
+
+      &:hover,
+      &:hover > * {
+        color: var(--terciary-color-500);
+      }
+    }
+  }
+
+  &__close {
+    width: px-to-rem(14);
+    height: px-to-rem(14);
+    font-size: px-to-rem(14);
+    position: absolute;
+    top: 15px;
+    right: 37px;
+    color: var(--primary-color-400);
+
+    &:hover {
+      color: var(--primary-color-600);
+    }
+  }
+
+  &__search {
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 11px); // (100% - 22px) / 2
+
+    :hover > * {
+      color: var(--terciary-color-200);
+    }
+  }
+}

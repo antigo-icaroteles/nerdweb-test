@@ -1,0 +1,22 @@
+.logo {
+  @include img-full(cover);
+  transition: all ease 0.3s;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__menu {
+    width: 105px;
+    height: 40px;
+    margin-bottom: 41.92px;
+    @include bg-image("../../../public/assets/logos/menu.png");
+  }
+
+  &__footer {
+    width: 88px;
+    height: 34px;
+    object-fit: contain;
+  }
+}
